@@ -1,4 +1,4 @@
-from faker import Faker as fk
+""" from faker import Faker as fk
 import os 
 import pandas as pd
 
@@ -12,7 +12,7 @@ with open(folder + "fktemp.csv", "w", encoding='utf8') as f :
 
 with open(folder + "fktemp.csv", "a", newline='', encoding='utf8') as f :
     for i in range(30) :
-            f.write(temp.name() + "," + 
+        f.write(temp.name() + "," + 
             temp.address() + "," + 
             temp.postcode() + "," + 
             temp.company() + "," + 
@@ -23,13 +23,13 @@ with open(folder + "fktemp.csv", "a", newline='', encoding='utf8') as f :
             temp.ipv4_private() + "," + 
             temp.ipv4_public() + "," + 
             temp.catch_phrase() + "," + 
-            temp.color_name() + "\n")
+            temp.color_name() + "\n") """
  
             
 import pandas as pd
 
 folder = "data/"
-target = folder = "fktemp.csv"
+target = folder + "fktemp.csv"
 
 df = pd.read_csv(target)
 
